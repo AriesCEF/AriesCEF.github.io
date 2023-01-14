@@ -24,19 +24,26 @@ header .nav{
 }
 
 /* -- LOGO -- */
+#aries{
+    border: 3px solid red;
+    
+}
+
 header .logo h2,
 header .logo span,
 header .logo p{
-    font-size: 20px;
+    font-size: 28px;
     display: inline-block;
     margin: 0;
-    text-shadow: -5px 5px 3px red;
+    font-style: italic;
+    text-shadow: -6px 5px 3px red;
 }
 
 header .logo{
     border: rgba(5, 7, 12, 0.40);
     background: rgba(5, 7, 12, 0);
     border-radius: 0px 0px 0px 0px;
+    
 }
 
 header .logo h2{
@@ -44,16 +51,16 @@ header .logo h2{
     color: #3db0e2;
 }
 header .logo .icono{
-    color: #bfbfbf;
+    color: #f4f1f1;
 }
 
 header .logo svg{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 header .logo p{
-    color: #777777;
+    color: #3de26e;
 }
 
 /* -- MENU -- */
@@ -70,13 +77,15 @@ header .menu a div span{
     font-weight: 600;
 }
 
-header .menu .c1{ background: #3da5e294; }
-header .menu .c2{ background: #005285ad; }
-header .menu .c3{ background: #003955b0; }
+header .menu .c1{ background: #69bcec85; }
+header .menu .c2{ background: #036babad; }
+header .menu .c3{ background: #084870ad; }
+header .menu .c4{ background: #04364eb0; }
 
-header .menu .c1:hover{ background: #1b73ef; }
-header .menu .c2:hover{ background: #00426a; }
-header .menu .c3:hover{ background: #002d44; }
+header .menu .c1:hover{ background: #589ec6;}
+header .menu .c2:hover{ background: #036bab;}
+header .menu .c3:hover{ background: #084870;}
+header .menu .c4:hover{ background: #04364e;}
 
 /* -- SLIDER -- */
 header .slide{
@@ -103,6 +112,10 @@ header .slide .image{
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     text-shadow: -5px 5px 3px red;
+}
+
+.portafolio .galeria{
+    padding-top: 20px;
 }
 
 .portafolio .galeria .contenedor-imagen{
@@ -193,6 +206,16 @@ figcaption ul li{
     background: rgba(5, 7, 12, 0.40);
     border-radius: 30px;
     box-shadow: 0 0 30px 0 rgba(255, 255, 255, .3);
+}
+
+.sobre-mi .panel .foto .nombre{
+    font-size: 30px;
+}
+
+.sobre-mi .panel .info p{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
 }
 
 .sobre-mi .panel1{
@@ -410,8 +433,26 @@ figcaption ul li{
 /* --- MEDIAQUERIES ---*/
 
 /* Dispositivos xl */
-@media screen and (max-width:1199px) {
+@media screen and (max-width:1200px) {
    
+    .logo{
+        height: 76px;
+        align-items: center;
+    }
+
+    .menu {
+        min-height: 76px;
+        width: 100%;
+    }
+
+    .menu a {
+        width: 100%;
+    }
+
+    .menu a div{
+        width: 100%;
+    }
+
     figcaption {font-size: 1.2rem;}
     .portafolio .galeria .contenedor-imagen:nth-child(7) figcaption {padding-left: 15%; padding-top: 3%;}
     .portafolio .galeria .contenedor-imagen:nth-child(2) figcaption {padding-left: 35%; padding-top: 5%;}
@@ -467,11 +508,11 @@ figcaption ul li{
     }
 }
 
-/* Dispositivos md */
-@media screen and (max-width:768px) {
+/* Dispositivos sp */
+@media screen and (max-width:912px) {
     header .logo h2, 
     header .logo p{
-        font-size: 16px;
+        font-size: 30px;
     }
 
     header .logo h2{
@@ -479,8 +520,77 @@ figcaption ul li{
     }
 
     header .logo .icono img{
-        height: 35px;
-        width: 35px;
+        height: 55px;
+        width: 55px;
+    }
+
+    .menu a div span{
+        font-size: 23px;
+        font-weight: 300;
+    }
+
+    .menu .icono svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    #parrafo-modal{
+        font-size: 25px;
+    }
+
+    .sobre-mi .panel1{
+        padding: 30px;
+    }
+
+    .panel1 .titulo1{
+        padding-top: 10px;
+        font-size: 35px;
+    }
+
+    .sobre-mi .panel1 .resumen{
+        
+        padding: 0px 0px 10px 0px;
+        font-size: 25px;
+    }
+    
+    .sobre-mi .panel1 .barras{
+        padding: 0px 25px 0px 25px;
+    }
+    
+    .sobre-mi .info .label{
+        font-size: 16px;
+        font-weight: 300;
+    }
+    
+    .barras p{
+        padding-left: 10px;
+    }
+}
+
+/* Dispositivos md */
+@media screen and (max-width:768px) {
+    header .logo h2, 
+    header .logo p{
+        font-size: 30px;
+    }
+
+    header .logo h2{
+        margin-right: 2px;
+    }
+
+    header .logo .icono img{
+        height: 55px;
+        width: 55px;
+    }
+
+    .menu a div span{
+        font-size: 23px;
+        font-weight: 300;
+    }
+
+    .menu .icono svg{
+        width: 30px;
+        height: 30px;
     }
 
     .portafolio .galeria .contenedor-imagen{
@@ -497,13 +607,14 @@ figcaption ul li{
         margin-top: 0;
     }
 
-    header .logo{
-        margin-left: 0px;
-    }
-
     header .logo h2, 
     header .logo p{
-        font-size: 15px;
+        font-size: 18px;
+    }
+
+    #aries{
+        width: 30px;
+        height: 30px;
     }
 
     header .logo h2{
@@ -511,13 +622,18 @@ figcaption ul li{
     }
 
     header .menu a div span{
-        font-weight: 500;
-        font-size: 15px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    header .menu a div svg{
+        width: 20px;
+        height: 20px;
     }
 
     .portafolio .titulo{
-        font-size: 25px;
-        font-weight: 600;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     .portafolio .galeria .contenedor-imagen{
@@ -526,17 +642,111 @@ figcaption ul li{
         
     }
 
-    .portafolio .galeria .contenedor-imagen:nth-child(2) figcaption {padding-left: 30%; padding-top: 3%;}
-    .portafolio .galeria .contenedor-imagen:nth-child(3) figcaption {padding-left: 30%; padding-top: 3%;}
-    .portafolio .galeria .contenedor-imagen:nth-child(1) figcaption {padding-left: 18%; padding-top: 7%;}
-    .portafolio .galeria .contenedor-imagen:nth-child(4) figcaption {padding-left: 3%; padding-top: 7%;}
-    .portafolio .galeria .contenedor-imagen:nth-child(5) figcaption {padding-left: 5%; padding-top: 7%;}
-    .portafolio .galeria .contenedor-imagen:nth-child(6) figcaption {padding-left: 28%; padding-top: 5%;}
-    .portafolio .galeria .contenedor-imagen:nth-child(7) figcaption {padding-left: 30%; padding-top: 5%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(2) figcaption {padding-left: 30%; padding-top: 0%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(3) figcaption {padding-left: 30%; padding-top: 0%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(1) figcaption {padding-left: 18%; padding-top: 0%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(4) figcaption {padding-left: 3%; padding-top: 0%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(5) figcaption {padding-left: 5%; padding-top: 0%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(6) figcaption {padding-left: 28%; padding-top: 0%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(7) figcaption {padding-left: 30%; padding-top: 0%;}
 
     .sobre-mi .info .titulo{
         font-size: 25px;
         font-weight: 600;
+    }
+
+    .modal{
+        margin-left: 20px;
+    }
+
+    .modal-dialog p{
+        align-content: center;
+        font-size: 12px;
+    }
+
+    .redes-sociales .icono{
+        width: 50px;
+        height: 50px;
+    }
+
+    .redes-sociales .icono svg{
+        width: 25px;
+        height: 25px;
+    }
+        
+}
+
+/* Dispositivos xs */
+@media screen and (max-width:540px) {
+    header {
+        margin-top: 0;
+    }
+
+    header .logo h2, 
+    header .logo p{
+        font-size: 25px;
+    }
+
+    #aries{
+        width: 40px;
+        height: 40px;
+    }
+
+    header .logo h2{
+        margin-right: 2px;
+    }
+
+    header .menu a div span{
+        padding-top: 10px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    header .menu a div .icono svg{
+        width: 30px;
+        height: 30px;
+        padding-bottom: 10px;
+    }
+
+    .portafolio .titulo{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .portafolio .galeria .contenedor-imagen{
+        max-height: 120px;
+        overflow: hidden;
+        
+    }
+
+    .portafolio .galeria .contenedor-imagen:nth-child(2) figcaption {padding-left: 30%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(3) figcaption {padding-left: 30%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(1) figcaption {padding-left: 18%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(4) figcaption {padding-left: 3%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(5) figcaption {padding-left: 5%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(6) figcaption {padding-left: 28%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(7) figcaption {padding-left: 30%; padding-top: 2%;}
+
+    .sobre-mi .panel .foto .nombre{
+        font-size: 25px;
+    }
+    
+    .sobre-mi .panel .info .resumen{
+        font-size: 20px;
+    }
+
+    .sobre-mi .panel1 .titulo1{
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .sobre-mi .panel1 .resumen{
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .modal{
+        margin-left: 20px;
     }
 
     .modal-dialog p{
