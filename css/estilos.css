@@ -209,13 +209,7 @@ figcaption ul li{
 }
 
 .sobre-mi .panel .foto .nombre{
-    font-size: 30px;
-}
-
-.sobre-mi .panel .info p{
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .sobre-mi .panel1{
@@ -258,8 +252,9 @@ figcaption ul li{
 .titulo{
     color: #3da5e2;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 40px;
+    font-style: italic;
     text-shadow: -5px 5px 3px red;
     margin-bottom: 30px;
 }
@@ -267,10 +262,14 @@ figcaption ul li{
 .titulo1{
     color: #3da5e2;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 30px;
     text-shadow: -5px 5px 3px red;
     margin-bottom: 30px;
+}
+
+.shadow {
+    filter: drop-shadow( -6px 5px 5px red );
 }
 
 .sobre-mi .info .resumen{
@@ -334,25 +333,22 @@ figcaption ul li{
 
 /* Contacto */
 .panel{
-   
+    padding: 4%;
+    margin: auto;
     border: rgba(5, 7, 12, 0.40);
     background: rgba(5, 7, 12, 0.40);
     border-radius: 30px;
+    box-shadow: 0 0 30px 0 rgba(255, 255, 255, .3);
 }
 
 .contacto .titulo{
-    color: #3da5e2;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: 40px;
-    margin-bottom: 40px;
     text-align: center;
 }
 
 .contacto .formulario input[type="text"],
 .contacto .formulario input[type="email"],
 .contacto .formulario textarea{
-    padding: 5px;
+    padding: 3px;
     border: none;
     font-family: 'Open Sans', sans-serif;
 }
@@ -361,24 +357,6 @@ figcaption ul li{
     height: 150px;
     min-height: 150px;
     max-height: 250px;
-}
-
-.alert{
-    padding: 1em;
-    color: #fff;
-    border-radius: 2px;
-    margin-bottom: 20px;
-    font-size: 14px;
-}
-
-.alert .error{
-    background: #F2DEDE;
-    border: 1px solid #a94442;
-    color: #a94442;
-}
-
-.alert .success{
-    background: #4CAF50;
 }
 
 .contacto .formulario .boton{
@@ -400,6 +378,7 @@ figcaption ul li{
     border: rgba(5, 7, 12, 0.40);
     background: rgba(5, 7, 12, 0.40);
     border-radius: 30px;
+    box-shadow: 0 0 30px 0 rgba(255, 255, 255, .3);
 }
 
 .redes-sociales{
@@ -424,6 +403,7 @@ figcaption ul li{
     height: 40px;
 }
 
+.redes-sociales .linkedin{background: red;}
 .redes-sociales .twitter{background: #1da1f2;}
 .redes-sociales .instagram{background: #833ab4;}
 .redes-sociales .facebook{background: #3b5998;}
@@ -512,7 +492,7 @@ figcaption ul li{
 @media screen and (max-width:912px) {
     header .logo h2, 
     header .logo p{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     header .logo h2{
@@ -520,18 +500,18 @@ figcaption ul li{
     }
 
     header .logo .icono img{
-        height: 55px;
-        width: 55px;
+        height: 45px;
+        width: 45px;
     }
 
     .menu a div span{
-        font-size: 23px;
-        font-weight: 300;
+        font-size: 16px;
+        font-weight: 100;
     }
 
     .menu .icono svg{
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
 
     #parrafo-modal{
@@ -571,7 +551,7 @@ figcaption ul li{
 @media screen and (max-width:768px) {
     header .logo h2, 
     header .logo p{
-        font-size: 30px;
+        font-size: 20px;
     }
 
     header .logo h2{
@@ -579,18 +559,18 @@ figcaption ul li{
     }
 
     header .logo .icono img{
-        height: 55px;
-        width: 55px;
+        height: 45px;
+        width: 45px;
     }
 
     .menu a div span{
-        font-size: 23px;
-        font-weight: 300;
+        font-size: 16px;
+        font-weight: 100;
     }
 
     .menu .icono svg{
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
 
     .portafolio .galeria .contenedor-imagen{
@@ -609,12 +589,12 @@ figcaption ul li{
 
     header .logo h2, 
     header .logo p{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     #aries{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 
     header .logo h2{
@@ -622,18 +602,34 @@ figcaption ul li{
     }
 
     header .menu a div span{
-        font-weight: 600;
-        font-size: 18px;
+        font-size: 16px;
+        font-weight: 300;
     }
 
     header .menu a div svg{
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
     }
 
-    .portafolio .titulo{
+    .titulo{
         padding-top: 0px;
         padding-bottom: 0px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .titulo svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .sobre-mi .panel1 .titulo1{
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .sobre-mi .panel1 .resumen{
+        font-size: 16px;
     }
 
     .portafolio .galeria .contenedor-imagen{
@@ -650,9 +646,96 @@ figcaption ul li{
     .portafolio .galeria .contenedor-imagen:nth-child(6) figcaption {padding-left: 28%; padding-top: 0%;}
     .portafolio .galeria .contenedor-imagen:nth-child(7) figcaption {padding-left: 30%; padding-top: 0%;}
 
-    .sobre-mi .info .titulo{
+    .modal{
+        margin-left: 20px;
+    }
+
+    .modal-dialog p{
+        align-content: center;
+        font-size: 12px;
+    }
+
+
+
+    .redes-sociales .icono{
+        width: 50px;
+        height: 50px;
+    }
+
+    .redes-sociales .icono svg{
+        width: 25px;
+        height: 25px;
+    }
+        
+}
+
+/* Dispositivos xs */
+@media screen and (max-width:540px) {
+    header {
+        margin-top: 0;
+    }
+
+    header .logo h2, 
+    header .logo p{
+        font-size: 25px;
+    }
+
+    #aries{
+        width: 40px;
+        height: 40px;
+    }
+
+    header .logo h2{
+        margin-right: 2px;
+    }
+
+    header .menu a div span{
+        padding-top: 10px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    header .menu a div .icono svg{
+        width: 30px;
+        height: 30px;
+        padding-bottom: 10px;
+    }
+
+    .portafolio .titulo{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .portafolio .galeria .contenedor-imagen{
+        max-height: 120px;
+        overflow: hidden;
+        
+    }
+
+    .portafolio .galeria .contenedor-imagen:nth-child(2) figcaption {padding-left: 30%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(3) figcaption {padding-left: 30%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(1) figcaption {padding-left: 18%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(4) figcaption {padding-left: 3%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(5) figcaption {padding-left: 5%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(6) figcaption {padding-left: 28%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(7) figcaption {padding-left: 30%; padding-top: 2%;}
+
+    .sobre-mi .panel .foto .nombre{
+        font-size: 25px;
+    }
+    
+    .sobre-mi .panel .info .resumen{
+        font-size: 20px;
+    }
+
+    .sobre-mi .panel1 .titulo1{
         font-size: 25px;
         font-weight: 600;
+    }
+
+    .sobre-mi .panel1 .resumen{
+        font-size: 20px;
+        text-align: left;
     }
 
     .modal{
@@ -676,15 +759,15 @@ figcaption ul li{
         
 }
 
-/* Dispositivos xs */
-@media screen and (max-width:540px) {
+/* Dispositivos xxs */
+@media screen and (max-width:412px) {
     header {
         margin-top: 0;
     }
 
     header .logo h2, 
     header .logo p{
-        font-size: 25px;
+        font-size: 12px;
     }
 
     #aries{
