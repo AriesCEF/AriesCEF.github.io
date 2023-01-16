@@ -341,10 +341,14 @@ figcaption ul li{
     box-shadow: 0 0 30px 0 rgba(255, 255, 255, .3);
 }
 
+li{
+    list-style: none;
+}
+
 .contacto .titulo{
     text-align: center;
 }
-
+/*
 .contacto .formulario input[type="text"],
 .contacto .formulario input[type="email"],
 .contacto .formulario textarea{
@@ -353,11 +357,7 @@ figcaption ul li{
     font-family: 'Open Sans', sans-serif;
 }
 
-.contacto .formulario textarea{
-    height: 150px;
-    min-height: 150px;
-    max-height: 250px;
-}
+
 
 .contacto .formulario .boton{
     background: #3da5e2;
@@ -370,6 +370,94 @@ figcaption ul li{
 
 .contacto .formulario .boton:hover {
     background: #1b73ef;
+}
+
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contacto .formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacto .formulario label {
+    display: block;
+}
+
+.contacto .formulario p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contacto .formulario .block {
+    grid-column: 1 / 3;
+}*/
+
+.contacto{
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: -5px 5px 3px red;
+}
+
+
+.contacto .formulario button,
+.contacto .formulario input,
+.contacto .formulario textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+}
+
+.contacto .formulario textarea{
+    height: 150px;
+    min-height: 150px;
+    max-height: 250px;
+}
+
+.contacto .formulario button {
+    width: 50%;
+    background: #2b88bd;
+    font-weight: 300;
+    border: 0;
+    border-radius: 3px;
+    
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contacto .formulario button:hover,
+.contacto .formulario button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+
+.contact-info{
+    border-radius: 5px;
+    border-left: 3px solid red;
+    padding: 10px;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
 }
 
 /* Footer */
