@@ -15,6 +15,7 @@ header{
 }
 
 header .nav{
+    
     min-height: 80px;
     overflow: hidden;
     border: rgba(5, 7, 12, 0.459);
@@ -304,7 +305,7 @@ figcaption ul li{
     background: #005385;
     border-radius: 10px;
     height: 25px;
-    box-shadow: 0 0 50px 0 rgba(255, 255, 255, .5);
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .5);
 }
 
 .sobre-mi .info .progress .progress-bar{
@@ -345,63 +346,10 @@ li{
     list-style: none;
 }
 
+
 .contacto .titulo{
     text-align: center;
 }
-/*
-.contacto .formulario input[type="text"],
-.contacto .formulario input[type="email"],
-.contacto .formulario textarea{
-    padding: 3px;
-    border: none;
-    font-family: 'Open Sans', sans-serif;
-}
-
-
-
-.contacto .formulario .boton{
-    background: #3da5e2;
-    border: none;
-    padding: 7px 30px;
-    color: #fff;
-    width: auto;
-    border-radius: 3px;
-}
-
-.contacto .formulario .boton:hover {
-    background: #1b73ef;
-}
-
-
-.contact-wrapper {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
-}
-
-.contact-wrapper > * {
-    padding: 1em;
-}
-
-.contact-form {
-    background: #222222;
-}
-
-.contacto .formulario {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.contacto .formulario label {
-    display: block;
-}
-
-.contacto .formulario p {
-    margin: 0;
-    padding: 1em;
-}
-
-.contacto .formulario .block {
-    grid-column: 1 / 3;
-}*/
 
 .contacto{
     margin-bottom: 40px;
@@ -446,6 +394,8 @@ li{
     transition: background-color 1s ease-out;
     outline: 0;
 }
+
+
 
 /* CONTACT INFO */
 
@@ -735,12 +685,12 @@ li{
     .portafolio .galeria .contenedor-imagen:nth-child(7) figcaption {padding-left: 30%; padding-top: 0%;}
 
     .modal{
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .modal-dialog p{
         align-content: center;
-        font-size: 12px;
+        font-size: 10px;
     }
 
 
@@ -897,6 +847,113 @@ li{
     .portafolio .galeria .contenedor-imagen:nth-child(5) figcaption {padding-left: 5%; padding-top: 2%;}
     .portafolio .galeria .contenedor-imagen:nth-child(6) figcaption {padding-left: 28%; padding-top: 2%;}
     .portafolio .galeria .contenedor-imagen:nth-child(7) figcaption {padding-left: 30%; padding-top: 2%;}
+
+    .sobre-mi .panel .foto .nombre{
+        font-size: 25px;
+    }
+    
+    .sobre-mi .panel .info .resumen{
+        font-size: 20px;
+    }
+
+    .sobre-mi .panel1 .titulo1{
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .sobre-mi .panel1 .resumen{
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .modal{
+        margin-left: 20px;
+    }
+
+    .modal-dialog p{
+        align-content: center;
+        font-size: 12px;
+    }
+
+    .redes-sociales .icono{
+        width: 50px;
+        height: 50px;
+    }
+
+    .redes-sociales .icono svg{
+        width: 25px;
+        height: 25px;
+    }
+        
+}
+
+/* Dispositivos xxs */
+@media screen and (max-width:375px) {
+
+    header .logo h2, 
+    header .logo p{
+        font-size: 17px;
+    }
+
+    #aries{
+        width: 35px;
+        height: 35px;
+    }
+
+    header .logo {
+        align-content: center;
+        padding-left: 2px;
+    }
+
+    header .menu a div span{
+        padding-top: 2px;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    header .menu a div .icono svg{
+        width: 20px;
+        height: 20px;
+        padding-bottom: 2px;
+    }
+
+    .portafolio .titulo{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .titulo{
+        font-size: 20px;
+    }
+
+    .titulo svg{
+        width: 25px;
+        height: 25px;
+    }
+    
+    .portafolio .galeria .contenedor-imagen{
+        max-height: 120px;
+        overflow: hidden;
+        
+    }
+
+    .portafolio .galeria .contenedor-imagen:nth-child(2) figcaption {padding-left: 30%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(3) figcaption {padding-left: 30%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(1) figcaption {padding-left: 18%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(4) figcaption {padding-left: 3%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(5) figcaption {padding-left: 5%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(6) figcaption {padding-left: 28%; padding-top: 2%;}
+    .portafolio .galeria .contenedor-imagen:nth-child(7) figcaption {padding-left: 30%; padding-top: 2%;}
+
+    
+    .modal{
+        margin: 1px;
+    }
+
+    .modal-dialog p{
+        align-content: center;
+        font-size: 10px;
+    }
 
     .sobre-mi .panel .foto .nombre{
         font-size: 25px;
