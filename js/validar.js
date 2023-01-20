@@ -3,6 +3,7 @@ const email = document.getElementById("correo")
 const mensaje = document.getElementById("mensaje")
 const form = document.getElementById("form") 
 const parrafo = document.getElementById("warnings")
+const boton1 = document.getElementById("boton")
 
 form.addEventListener("submit", e=>{
     e.preventDefault()
@@ -23,6 +24,7 @@ form.addEventListener("submit", e=>{
     if(entrar){
         parrafo.innerHTML = warnings
     }else{
+        
         parrafo.innerHTML = "Enviado"
         nombre.value = ""
         email.value = ""
