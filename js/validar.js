@@ -23,8 +23,6 @@ form.addEventListener("submit", e=>{
     if(entrar){
         parrafo.innerHTML = warnings
     }else{
-        form.action = "https://formspree.io/f/mqkoaeav"
-        form.onsubmit()
         parrafo.innerHTML = "Enviado"
         nombre.value = ""
         email.value = ""
