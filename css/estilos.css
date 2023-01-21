@@ -358,16 +358,24 @@ li{
 }
 
 
-.contacto .formulario button,
+
 .contacto .formulario input,
 .contacto .formulario textarea {
     width: 100%;
     padding: .7em;
     border: none;
     background: none;
-    outline: 0;
+    outline: none;
     color: #fff;
     border-bottom: 1px solid #d63031;
+}
+
+.contacto .formulario input:focus,
+.contacto .formulario textarea:focus{
+    border: none;
+    
+    border-bottom: 1px solid #d63031;
+    outline: none;
 }
 
 .contacto .formulario textarea{
@@ -376,23 +384,43 @@ li{
     max-height: 250px;
 }
 
-.contacto .formulario button {
-    width: 50%;
-    background: #2b88bd;
-    font-weight: 300;
-    border: 0;
-    border-radius: 3px;
-    
-    text-transform: uppercase;
-    padding: 1em;
+#warnings{
+    padding-top: 25px;
+    padding-bottom: 0px;
 }
 
-.contacto .formulario button:hover,
-.contacto .formulario button:focus {
-    background: #d63031;
-    color: #fff;
-    transition: background-color 1s ease-out;
-    outline: 0;
+.contacto .formulario button {
+    width: 25%;
+    height: 50px;
+    background: #eb94d0;
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    text-transform: uppercase;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    text-shadow: 3px 2px 1px #9daef5;
+    -webkit-box-shadow: 6px 5px 24px #666666;
+    -moz-box-shadow: 6px 5px 24px #666666;
+    box-shadow: 6px 5px 24px #666666;
+    font-family: Arial;
+    color: #fafafa;
+    font-size: 27px;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.contacto .formulario button:hover {
+    background: #2079b0;
+    background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+    text-decoration: none;
 }
 
 
@@ -402,7 +430,7 @@ li{
 .contact-info{
     border-radius: 5px;
     border-left: 3px solid red;
-    padding: 10px;
+    padding: 20px;
 }
 
 .contact-info h4, .contact-info ul, .contact-info p {

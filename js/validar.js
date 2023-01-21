@@ -30,7 +30,7 @@ form.addEventListener("submit", e=>{
         email.value = ""
         mensaje.value = ""
     }
-    document.getElementById("boton").style.backgroundColor = "#2b88bd"
+    
 })
 
 
