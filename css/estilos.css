@@ -474,7 +474,7 @@ li{
     height: 40px;
 }
 
-.redes-sociales .linkedin{background: red;}
+.redes-sociales .linkedin{background: #3b5998;}
 .redes-sociales .twitter{background: #1da1f2;}
 .redes-sociales .instagram{background: #833ab4;}
 .redes-sociales .facebook{background: #3b5998;}
@@ -1909,11 +1909,7 @@ li{
     .redes-sociales .icono{
         width: 30px;
         height: 30px;
-        display: inline-block;
         margin: 0px 5px;
-        text-decoration: none;
-        border-radius: 100px;
-        transition: all .3s ease;
     }
     
     .redes-sociales .icono svg{
