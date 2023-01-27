@@ -523,6 +523,15 @@ li{
     .portafolio .galeria .contenedor-imagen:nth-child(2) figcaption {padding-left: 35%; padding-top: 5%;}
     .portafolio .galeria .contenedor-imagen:nth-child(3) figcaption {padding-left: 35%; padding-top: 5%;}
 
+    .contact-info ul{
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .contact-info p{
+        font-size: 12px;
+    }
+
 }
 
 /* Dispositivos lg */
@@ -621,6 +630,29 @@ li{
     .modal .modal-dialog .modal-content img{
         width: 100%;
     }
+
+    .contact-info{
+        border-top:3px solid red;
+        border-left: 0px;
+    }
+
+    .contact-info h4{
+        font-size: 20px;
+    }
+
+    .contact-info ul{
+        font-size: 18px;
+    }
+
+    .contact-info p{
+        font-size: 18px;
+    }
+
+    #aries-1{
+        width: 70px;
+        height: 70px;
+    }
+
 }
 
 /* Dispositivos sp */
@@ -1683,36 +1715,42 @@ li{
     }
 
     .sobre-mi .panel .foto .nombre{
-        font-size: 17px;
+        font-size: 14px;
     }
     
     .sobre-mi .panel .foto img{
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 
     .sobre-mi .panel .info .resumen{
-        font-size: 15px;
+        font-size: 12px;
+        text-align: justify;
     }
 
     .sobre-mi .panel1 .titulo1{
-        font-size: 18px;
-        font-weight: 500;
+        font-size: 16px;
+        font-weight: 400;
     }
 
     .sobre-mi .panel1 .titulo1 svg{
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
     }
 
     .sobre-mi .panel1 .resumen{
-        font-size: 15px;
+        font-size: 12px;
         text-align: center;
     }
 
     .sobre-mi .panel1 .barras{
        padding-left: 2px;
         padding-right: 2px;
+    }
+
+    .sobre-mi .panel1 .barras .label,
+    .sobre-mi .panel1 .barras .progress .progress-bar{
+        font-size: 12px;
     }
 
     .modal{
@@ -1725,12 +1763,17 @@ li{
     }
 
     .contacto .formulario button {
-        width: 120px;
-        height: 40px;
-        font-size: 15px;
+        width: 110px;
+        height: 30px;
+        font-size: 13px;
         padding: 4px;
     }
     
+    .contacto .formulario label,
+    .contacto .formulario input{
+        font-size: 12px;
+    }
+
     .contact-info{
         border-top:3px solid red;
         border-left: 0px;
@@ -1742,20 +1785,21 @@ li{
     }
     
     .contact-info h4{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .contact-info ul{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .contact-info p{
-        font-size: 14px;
+        font-size: 12px;
     }
 
-    #aries{
-        width: 50px;
-        height: 50px;
+    #aries,
+    #aries-1{
+        width: 40px;
+        height: 40px;
     }
 
     .redes-sociales .icono{
@@ -1779,11 +1823,7 @@ li{
         font-size: 12px;
     }
 
-    #aries{
-        width: 32px;
-        height: 32px;
-    }
-
+    #aries,
     #aries-1{
         width: 32px;
         height: 32px;
