@@ -83,10 +83,10 @@ header .menu .c2{ background: #036babad; }
 header .menu .c3{ background: #084870ad; }
 header .menu .c4{ background: #04364eb0; }
 
-header .menu .c1:hover{ background: #589ec6;}
-header .menu .c2:hover{ background: #036bab;}
-header .menu .c3:hover{ background: #084870;}
-header .menu .c4:hover{ background: #04364e;}
+header .menu .c1:hover{background: #589ec6;}
+header .menu .c2:hover{background: #036bab;}
+header .menu .c3:hover{background: #084870;}
+header .menu .c4:hover{background: #04364e;}
 
 /* -- SLIDER -- */
 header .slide{
@@ -421,6 +421,9 @@ li{
     background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
     background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
     text-decoration: none;
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: -6px 5px 24px #666666;
+    filter: none;
 }
 
 
@@ -469,15 +472,26 @@ li{
     transition: all .3s ease;
 }
 
+.redes-sociales .icono:hover{
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 0 30px 0 rgba(255, 255, 255, .3);
+    filter: none;
+}
+
 .redes-sociales .icono svg{
     width: 40px;
     height: 40px;
 }
 
-.redes-sociales .linkedin{background: #3b5998;}
+.redes-sociales .linkedin{background: #0e76a8;}
 .redes-sociales .twitter{background: #1da1f2;}
-.redes-sociales .instagram{background: #833ab4;}
+.redes-sociales .instagram{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
 .redes-sociales .facebook{background: #3b5998;}
+
+
 
 
 
@@ -1203,14 +1217,14 @@ li{
     }
 
     .redes-sociales .icono{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         margin: 0px 5px;
     }
     
     .redes-sociales .icono svg{
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
     }
         
 }
@@ -1300,14 +1314,14 @@ li{
     }
 
     .redes-sociales .icono{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         margin: 0px 5px;
     }
     
     .redes-sociales .icono svg{
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
     }
         
 }
@@ -1446,14 +1460,14 @@ li{
     }
 
     .redes-sociales .icono{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         margin: 0px 5px;
     }
     
     .redes-sociales .icono svg{
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
     }
         
 }
@@ -1593,14 +1607,14 @@ li{
     }
 
     .redes-sociales .icono{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         margin: 0px 5px;
     }
     
     .redes-sociales .icono svg{
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
     }
         
 }
@@ -1745,14 +1759,14 @@ li{
     }
 
     .redes-sociales .icono{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         margin: 0px 5px;
     }
     
     .redes-sociales .icono svg{
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
     }
         
 }
@@ -1912,14 +1926,14 @@ li{
     }
 
     .redes-sociales .icono{
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
         margin: 0px 5px;
     }
     
     .redes-sociales .icono svg{
-        width: 15px;
-        height: 15px;
+        width: 18px;
+        height: 18px;
     }
         
 }
